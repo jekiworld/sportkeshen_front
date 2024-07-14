@@ -1,0 +1,139 @@
+.regpage {
+    margin-top: 210px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.registerpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 110px 20px;
+    margin-top: -30px;
+    border-radius: 10px;
+    background-color: rgb(53, 148, 68, 0.705);
+    /* background-color: rgba(53, 148, 68, 0.705); */
+    /* background-color: rgb(23, 157, 224, 0.805); */
+    /* background-color: rgb(141, 151, 153, 0.805); */
+    /* background-color: rgb(255, 255, 255); */
+
+    backdrop-filter: blur(0.5rem);
+}
+
+.fullname {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.firstname_box {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px white;
+    border-radius: 13px;
+    height: 4vh;
+    width: 21vw;
+    background-color: rgb(255, 255, 255); */
+    color: white;
+}
+
+.secondname_box {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.firstname{
+    border: solid 1px white;
+    border-radius: 13px;
+    height: 3vh;
+    width: 12vw;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.secondname{
+    border: solid 1px white;
+    border-radius: 13px;
+    height: 3vh;
+    width: 12vw;
+    background-color: rgb(255, 255, 255);
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.username{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+
+.regpassword{
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+
+.confrimpassword{
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+.email_in{
+    border: solid 1px white;
+    border-radius: 13px;
+    height: 3vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.username_in{
+    border: solid 1px white;
+    border-radius: 13px;
+    height: 3vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.regpas_in{
+    border: solid 1px white;
+    border-radius: 13px;
+    height: 3vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.confirmpas_in{
+    border: solid 1px white;
+    border-radius: 13px;
+    height: 3vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.emailpage{
+    width: 100%;
+}
+
+.regbut{
+    margin-top: 50px;
+    width: 15vw;
+    height: 4vh;
+    border: solid 1px rgb(21, 22, 46);
+    border-radius: 30px;
+    background-color: rgb(21, 22, 46);
+    color: white;
+}

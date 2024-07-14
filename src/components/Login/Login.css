@@ -1,0 +1,59 @@
+.loginpage {
+    margin-top: 210px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* gap: 150px; */
+    /* border: 1px solid; */
+}
+
+.logpas {
+    border: 1px solid black;
+    display: flex;
+    padding: 110px 100px;
+    margin-top: -30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    /* background: var(--white-10); */
+    background-color: rgb(53, 148, 68, 0.705);
+    backdrop-filter: blur(0.5rem);
+}
+
+.welcome {
+    color: white;
+}
+
+.login {
+    /* border: solid black 1px; */
+    border: solid 1px white;
+    border-radius: 13px;
+    height: 4vh;
+    width: 21vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.105);
+}
+
+.password {
+    /* border: solid black 1px; */
+    border: solid 1px white;
+    border-radius: 13px;
+    height: 4vh;
+    width: 21vw;
+    background-color: rgb(255, 255, 255);
+}
+
+.submit_log {
+    border: solid 1px rgb(21, 22, 46);
+    border-radius: 13px;
+    width: 21vw;
+    height: 3vh;
+    background-color: rgb(21, 22, 46);
+    /* background-color: rgba(53, 148, 68, 0.705); */
+    /* background-color: rgb(23, 157, 224, 0.805); */
+
+    color: white;
+}
