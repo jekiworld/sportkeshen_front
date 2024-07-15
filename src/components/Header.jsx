@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
-import { BrowserRouter as Router, Route, Routes, Link, Outlet, useNavigate } from 'react-router-dom';
-
+import React from 'react'
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = ({ authenticated, token, switch_authenticated_false }) => {
 
   const navigate = useNavigate();
 
   const handleLoginClick = () => {
-    navigate('/Login');
+    navigate('/login');
   };
 
   const handleMainClick = () => {
@@ -15,7 +14,7 @@ const Header = ({ authenticated, token, switch_authenticated_false }) => {
   };
 
   const handleRegisterClick = () => {
-    navigate('/Register');
+    navigate('/register');
   };
 
   const handleLogoutClick = async () => {
@@ -29,10 +28,8 @@ const Header = ({ authenticated, token, switch_authenticated_false }) => {
       });
 
       if (response.ok) {
-        switch_authenticated_false(false);
+        switch_authenticated_false();
         navigate('/');
-
-
       } else {
         console.error('Logout failed:', response.statusText);
       }
@@ -40,7 +37,6 @@ const Header = ({ authenticated, token, switch_authenticated_false }) => {
       console.error('Logout error:', error.message);
     }
   };
-
 
   return (
     <div className="header">
@@ -56,12 +52,11 @@ const Header = ({ authenticated, token, switch_authenticated_false }) => {
         ) : (
           <>
             <li className='five'><Link to="login" onClick={handleLoginClick}>Войти</Link></li>
-            <li className='six'><Link to="register">Зарегистрироваться</Link></li>
+            <li className='six'><Link to="register" onClick={handleRegisterClick}>Зарегистрироваться</Link></li>
           </>
         )}
       </ul>
     </div>
-
   );
 };
 

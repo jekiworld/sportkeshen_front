@@ -4,6 +4,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
   display: flex;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .all {
